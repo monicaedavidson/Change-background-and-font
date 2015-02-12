@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset='UTF-8' />
+<title>
+  Foreground and Background
+</title>
+<script>
+
+function setPageColors(fg, bg) {
+  document.fgColor = fg;
+  document.bgColor = bg;
+}
+
+function setDocumentTitle(newTitle) {
+  top.document.title = newTitle;
+}
+
+function init() {
+    var fg = prompt("Pick a font or foreground color. Ex: Black");
+    var bg = prompt("Pick a background color. Ex: Pink");
+    var title = prompt("Pick title for your web application");
+
+  setPageColors(fg, bg);
+  setDocumentTitle(title);
+}
+
+  window.onload = init; 
+
+</script>
+</head>
+<body>
+  <p>
+    Welcome to your site... maybe it needs more styling (: 
+  </p>
+</body>
+</html>
